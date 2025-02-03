@@ -1,5 +1,6 @@
 # Projet de Compilateur - Lexer / Parser / AST
-Pofngbzp
+Implementation d'un Lexer et d'un Parser, pour un language de type Python, avec creation d'un AST
+
 ## Description
 
 Ce projet implémente la première partie d'un compilateur avec trois composants principaux :
