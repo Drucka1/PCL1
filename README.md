@@ -2,14 +2,14 @@
 
 ## Description
 
-Ce projet implémente la première partie d'un compilateur avec trois composants principaux : 
+Ce projet implémente la première partie d'un compilateur avec trois composants principaux :
 - **Lexer** (analyseur lexical)
 - **Parser** (analyseur syntaxique)
-- **AST** (Arbre de Syntaxe Abstraite). 
+- **AST** (Arbre de Syntaxe Abstraite)
 
 L'objectif est de prendre un code source en entrée, dérivé du langage Python, et de le transformer en un AST.
 
-Un rapport détaillé est disponible dans le fichier [Rapport_PCL.pdf](./docs/Rapport_PCL.pdf), ainsi que le sujet dans lequel se trouve notamment la grammaire en page 4 [Sujet.pdf](./docs/sujet-Projet-2024-25.pdf)
+Un rapport détaillé est disponible dans le fichier [Rapport_PCL.pdf](./docs/Rapport_PCL.pdf), ainsi que le sujet du projet, qui inclut la grammaire en page 4 : [Sujet.pdf](./docs/sujet-Projet-2024-25.pdf).
 
 ---
 
@@ -31,27 +31,33 @@ Avant d'exécuter ce projet, assurez-vous d'avoir les outils suivants installés
    ```bash
    git clone https://github.com/Drucka1/PCL1.git
    ```
-2. **Acceder au répertoire du projet** :
+2. **Accédez au répertoire du projet** :
     ```bash
     cd PCL1
     ```
 ## Utilisation
 
-Avec JAR, vous pouvez l'exécuter avec la commande suivante :
+### Avec JAR
+
+Vous pouvez l'exécuter avec la commande suivante :
 
     java -jar app/build/libs/app.jar Lexer|Parser FilePath [option]
-Avec Gradle, vous pouvez l'exécuter avec la commande suivante :
+### Avec Gradle
+
+Vous pouvez l'exécuter avec la commande suivante :
 
     gradle run --args="Lexer|Parser FilePath [option]"
-Des fichiers de tests sont disponibles dans le repertoire app/src/main/resources
+#### Des fichiers de tests sont disponibles dans le repertoire *app/src/main/resources*
 
-Options disponibles :
+### Options disponibles
 
     --stack : Affiche la pile des tokens pendant l'analyse lexicale.
     --simplify : Simplifie l'Arbre de Syntaxe Abstraite (AST).
 
 
-Visualiser le .dot avec l'extension Graphviz sous VSCode ou en executant la commande suivante :
+### Visualisation des fichiers .dot
+
+Pour visualiser les fichiers .dot générés, vous pouvez utiliser l'extension Graphviz dans VSCode, ou exécuter la commande suivante pour générer une image PNG :
 
     dot -Tpng app/src/main/resources/output.dot -o output.png
 
@@ -107,7 +113,7 @@ Alternatively, you can run the program with the following command using Gradle:
 
     gradle run --args="Lexer|Parser FilePath [option]"
 
-#### Test files are available in the app/src/main/resources directory.
+#### Test files are available in the *app/src/main/resources* directory.
 
 ### Available Options
 
