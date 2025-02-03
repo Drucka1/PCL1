@@ -1,4 +1,4 @@
-#PCL1
+# PCL1
 Implementation d'un Lexer et d'un Parser, pour un language de type Python, avec creation d'un AST
 
 # Projet de Compilateur - Lexer / Parser / AST
