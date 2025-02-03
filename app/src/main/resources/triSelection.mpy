@@ -14,3 +14,4 @@ print(my_list)
 selection_sort(my_list)
 print("Après le tri par sélection :")
 print(my_list)
+
